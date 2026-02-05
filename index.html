@@ -4,24 +4,28 @@
   <meta charset="UTF-8" />
   <title>MISFIRE 000 — Cloth Collective</title>
 
-  <!-- IBM Plex Sans (Editorial + Italic) -->
+  <!-- Newsreader (Editorial Serif + Strong Italic) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       background: #0e0e0e;
       color: #f2f2f2;
-      font-family: 'IBM Plex Sans', sans-serif;
+      font-family: 'Newsreader', serif;
       margin: 0;
     }
 
     .container {
       max-width: 720px;
       margin: 0 auto;
-      padding: 48px 24px 96px; /* tighter top so logo + definition feel grouped */
+      padding: 56px 24px 96px;
       text-align: center;
+    }
+
+    .header {
+      margin-bottom: 40px;
     }
 
     /* HERO LOGO (GROUND IT ABOVE PRODUCT) */
@@ -45,11 +49,11 @@
     }
 
     .manifesto {
-      font-size: 0.95rem;
-      line-height: 1.6;
+      font-size: 1rem;
+      line-height: 1.55;
       font-style: italic;
       opacity: 0.85;
-      margin: 4px 0 32px; /* definition hugs logo */
+      margin: 6px 0 0;
     }
 
     /* PRODUCT */
@@ -196,6 +200,9 @@
 <body>
   <main class="container">
 
+    <!-- HEADER: LOGO + DEFINITION -->
+    <section class="header">
+
     <!-- HERO LOGO (SITS DIRECTLY ABOVE PRODUCT) -->
     <div class="hero-logo-wrap">
       <img src="misfire-hero.svg" alt="MISFIRE" class="hero-logo" />
@@ -204,6 +211,7 @@
     <p class="manifesto">
       Misfires occur when damage becomes routine.
     </p>
+    </section>
 
     <!-- PRODUCT IMAGE -->
     <div class="image-placeholder">
