@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MISFIRE 000 — Cloth Collective</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      background: #0e0e0e;
+      color: #f2f2f2;
+      font-family: Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px 96px; /* tightened top, balanced bottom */
+      text-align: center;
+    }
+
+    /* HERO LOGO (GROUND IT ABOVE PRODUCT) */
+    .hero-logo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px; /* sits right above product */
+    }
+
+    .hero-logo {
+      width: 340px;        /* stronger presence */
+      max-width: 88%;
+      height: auto;
+      opacity: 1;          /* SVGs need full contrast */
+    }
+
+    @media (max-width: 600px) {
+      .hero-logo {
+        width: 260px;
+      }
+    }
+
+    .manifesto {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      opacity: 0.85;
+      margin: 20px 0 32px; /* pulled closer to logo */
+    }
+
+    /* PRODUCT */
+    .image-placeholder {
+      width: 100%;
+      height: 420px;
+      border: 1px solid rgba(255,255,255,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      opacity: 0.6;
+    }
+
+    .fit-note {
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      opacity: 0.55;
+      margin-bottom: 36px;
+    }
+
+    .price {
+      font-size: 1rem;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      padding: 14px 46px;
+      border: 1px solid #f2f2f2;
+      color: #f2f2f2;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+    }
+
+    .buy-btn:hover {
+      background: #f2f2f2;
+      color: #0e0e0e;
+    }
+
+    .shipping-note {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      opacity: 0.6;
+    }
+
+    .size-select {
+      margin-top: 20px;
+      display: none;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .size-select button {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.6);
+      color: #f2f2f2;
+      padding: 10px 18px;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    .size-select button:hover {
+      background: #f2f2f2;
+      color: #0e0e0e;
+    }
+
+    /* PROJECT FILES (DENSE) */
+    .files {
+      margin-top: 28px; /* pulled up */
+      text-align: left;
+    }
+
+    .files h2 {
+      font-size: 0.7rem;
+      letter-spacing: 3px;
+      opacity: 0.6;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .files-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px; /* tighter */
+    }
+
+    .file {
+      height: 150px; /* shorter tiles */
+      border: 1px solid rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      opacity: 0.55;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 88px; /* less dead space */
+      font-size: 0.7rem;
+      opacity: 0.5;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .social-footer {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .icon-link {
+      color: #e0e0e0;
+      display: inline-flex;
+      transition: color .25s ease, filter .25s ease;
+    }
+
+    .icon-link:hover {
+      color: #fff;
+      filter: drop-shadow(0 0 8px rgba(255,255,255,.6));
+    }
+
+    .icon-link svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (max-width: 600px) {
+      .files-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <!-- HERO LOGO (SITS DIRECTLY ABOVE PRODUCT) -->
+    <div class="hero-logo-wrap">
+      <img src="misfire-hero.svg" alt="MISFIRE" class="hero-logo" />
+    </div>
+
+    <p class="manifesto">
+      Misfires occur when damage becomes routine.
+    </p>
+
+    <!-- PRODUCT IMAGE -->
+    <div class="image-placeholder">
+      PRODUCT IMAGE
+    </div>
+
+    <div class="fit-note">fit runs small — size up if between sizes</div>
+
+    <div class="price">$XX</div>
+
+    <a href="#" class="buy-btn" id="buyBtn">BUY NOW</a>
+    <div class="shipping-note">free shipping on nyc orders</div>
+
+    <div class="size-select" id="sizeSelect">
+      <button>S</button>
+      <button>M</button>
+      <button>L</button>
+      <button>XL</button>
+    </div>
+
+    <!-- PROJECT FILES -->
+    <section class="files">
+      <h2>misfire / prjct fls</h2>
+
+      <div class="files-grid">
+        <div class="file">FILE 001</div>
+        <div class="file">FILE 002</div>
+        <div class="file">FILE 003</div>
+        <div class="file">FILE 004</div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="social-footer">
+        <a href="https://www.instagram.com/misfire.clothcollective?igsh=MW5zMGM2OWpvdmhtMQ%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm6.5-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@natebeenbored?_r=1&_t=ZT-93eYWzd0ViQ" target="_blank" aria-label="TikTok" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12.75 2h3.5a5.25 5.25 0 005.25 5.25v3.5a8.75 8.75 0 01-5.25-1.75v7.75a6.75 6.75 0 11-6.75-6.75h.25v3.5a3.25 3.25 0 103.25 3.25V2z"/></svg>
+        </a>
+        <a href="https://www.snapchat.com/add/clothcollective" target="_blank" aria-label="Snapchat" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c3.4 0 6.2 2.6 6.4 6 .2 2.3.7 3.8 2.6 4.8.6.3.9 1 .7 1.6-.3.8-1 1.1-1.8 1.3-1 .2-1.2.6-1.2.9s.3.6.7.8c.4.2.8.4.9.8.2.5 0 1-.4 1.3-.7.5-2.4.6-3.1.7-.4.6-1.1 1.2-1.9 1.5-.7.3-1.4.4-2.2.4s-1.5-.1-2.2-.4c-.8-.3-1.5-.9-1.9-1.5-.7-.1-2.4-.2-3.1-.7-.4-.3-.6-.8-.4-1.3.1-.4.5-.6.9-.8.4-.2.7-.5.7-.8 0-.3-.2-.7-1.2-.9-.8-.2-1.5-.5-1.8-1.3-.2-.6.1-1.3.7-1.6 1.9-1 2.4-2.5 2.6-4.8.2-3.4 3-6 6.4-6z"/></svg>
+        </a>
+      </div>
+
+      CLOTH COLLECTIVE STUDIOS
+    </footer>
+
+  </main>
+
+  <script>
+    const buyBtn = document.getElementById('buyBtn');
+    const sizeSelect = document.getElementById('sizeSelect');
+
+    buyBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      buyBtn.style.display = 'none';
+      sizeSelect.style.display = 'flex';
+    });
+  </script>
+</body>
+</html>
