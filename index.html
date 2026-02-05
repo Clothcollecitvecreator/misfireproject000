@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>MISFIRE 000 — Cloth Collective</title>
+
+  <!-- IBM Plex Sans (Editorial + Italic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       background: #0e0e0e;
       color: #f2f2f2;
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: 'IBM Plex Sans', sans-serif;
       margin: 0;
     }
 
@@ -23,27 +28,28 @@
     .hero-logo-wrap {
       display: flex;
       justify-content: center;
-      margin-bottom: 16px; /* sits right above product */
+      margin-bottom: 8px;
     }
 
     .hero-logo {
-      width: 340px;        /* stronger presence */
-      max-width: 88%;
+      width: 260px;
+      max-width: 85%;
       height: auto;
-      opacity: 1;          /* SVGs need full contrast */
+      opacity: 1;
     }
 
     @media (max-width: 600px) {
       .hero-logo {
-        width: 260px;
+        width: 210px;
       }
     }
 
     .manifesto {
       font-size: 0.95rem;
       line-height: 1.6;
+      font-style: italic;
       opacity: 0.85;
-      margin: 20px 0 32px; /* pulled closer to logo */
+      margin: 12px 0 32px;
     }
 
     /* PRODUCT */
