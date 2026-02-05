@@ -3,57 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <title>MISFIRE 000 — Cloth Collective</title>
-
-  <!-- Newsreader (Editorial Serif + Strong Italic) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       background: #0e0e0e;
       color: #f2f2f2;
-      font-family: 'Newsreader', serif;
+      font-family: Helvetica, Arial, sans-serif;
       margin: 0;
     }
 
     .container {
       max-width: 720px;
       margin: 0 auto;
-      padding: 56px 24px 96px;
+      padding: 72px 24px 96px; /* tightened top, balanced bottom */
       text-align: center;
-    }
-
-    .header {
-      margin-bottom: 40px;
     }
 
     /* HERO LOGO (GROUND IT ABOVE PRODUCT) */
     .hero-logo-wrap {
       display: flex;
       justify-content: center;
-      margin-bottom: 4px; /* pulls logo directly into definition */
+      margin-bottom: 6px; /* anchored to content */
     }
 
     .hero-logo {
-      width: 260px;
-      max-width: 85%;
+      display: block;
+      width: 380px;        /* heavier, grounded */
+      max-width: 88%;
       height: auto;
       opacity: 1;
     }
 
     @media (max-width: 600px) {
       .hero-logo {
-        width: 210px;
+        width: 260px;
       }
     }
 
     .manifesto {
-      font-size: 1rem;
-      line-height: 1.55;
-      font-style: italic;
+      font-size: 0.95rem;
+      line-height: 1.6;
       opacity: 0.85;
-      margin: 6px 0 0;
+      margin: 10px 0 28px; /* pulled up under logo */
     }
 
     /* PRODUCT */
@@ -200,9 +191,6 @@
 <body>
   <main class="container">
 
-    <!-- HEADER: LOGO + DEFINITION -->
-    <section class="header">
-
     <!-- HERO LOGO (SITS DIRECTLY ABOVE PRODUCT) -->
     <div class="hero-logo-wrap">
       <img src="misfire-hero.svg" alt="MISFIRE" class="hero-logo" />
@@ -211,7 +199,6 @@
     <p class="manifesto">
       Misfires occur when damage becomes routine.
     </p>
-    </section>
 
     <!-- PRODUCT IMAGE -->
     <div class="image-placeholder">
@@ -275,4 +262,3 @@
   </script>
 </body>
 </html>
-
